@@ -54,4 +54,12 @@ int main() {
     for(const auto& pair : airports) {
         cout << "  " << pair.first << "  " << pair.second << endl;
     }
+
+    //Milestone 2
+    int max_usage = 0;
+    for(const auto& pair: airports) {
+        if (pair.second > max_usage) {
+            max_usage = pair.second;
+        }
+    }
 }
