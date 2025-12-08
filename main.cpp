@@ -26,7 +26,12 @@ int main() {
             }
         }
         if (airports.find(start_airport) != airports.end()) {
-            for (auto )
+            for (auto it = airports.begin(); it != airports.end(); it++) {
+                if (it->first == start_airport) {
+                    it->second += 1;
+                    break;
+                }
+            }
         }
         cout << end_airport << endl;
     }
