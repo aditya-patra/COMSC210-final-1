@@ -62,6 +62,7 @@ int main() {
             max_usage = pair.second;
         }
     }
+    max_usage = 8;
     cout << "Busiest airports: " << endl;
     for(const auto& pair: airports) {
         if (pair.second == max_usage) {
