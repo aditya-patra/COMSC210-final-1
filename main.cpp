@@ -10,6 +10,7 @@ int main() {
     string end_airport;
     string flight;
     map<string, int> airports;
+    // Milestone 1
     while(getline(file, flight)) {
         int start = 1;
         start_airport = "";
@@ -49,7 +50,8 @@ int main() {
             airports.insert(make_pair(end_airport, 1));
         }
     }
+    cout << "List of airports and usage: " << endl;
     for(const auto& pair : airports) {
-        cout << pair.first << "  " << pair.second << endl;
+        cout << "  " << pair.first << "  " << pair.second << endl;
     }
 }
