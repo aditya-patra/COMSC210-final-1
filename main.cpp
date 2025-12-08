@@ -12,6 +12,8 @@ int main() {
     map<string, int> airports;
     while(getline(file, flight)) {
         int start = 1;
+        start_airport = "";
+        end_airport = "";
         for(char c: flight) {
             if (c == ' ') {
                 start = 0;
@@ -23,5 +25,6 @@ int main() {
                 end_airport += c;
             }
         }
+        cout << end_airport << endl;
     }
 }
