@@ -17,6 +17,7 @@ int main() {
         for(char c: flight) {
             if (c == ' ') {
                 start = 0;
+                continue;
             }
             if (start == 1) {
                 start_airport += c;
@@ -36,18 +37,17 @@ int main() {
         else {
             airports.insert(make_pair(start_airport, 1));
         }
-        if (airports.find(start_airport) != airports.end()) {
+        if (airports.find(end_airport) != airports.end()) {
             for (auto it = airports.begin(); it != airports.end(); it++) {
-                if (it->first == start_airport) {
+                if (it->first == end_airport) {
                     it->second += 1;
                     break;
                 }
             }
         }
         else {
-            airports.insert(make_pair(start_airport, 1));
+            airports.insert(make_pair(end_airport, 1));
         }
-        // cout << end_airport << endl;
     }
     for(const auto& pair : airports) {
         cout << pair.first << "  " << pair.second << endl;
