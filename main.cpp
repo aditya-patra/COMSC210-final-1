@@ -10,5 +10,6 @@ int main() {
     string flight;
     while(getline(file, flight)) {
         int start = 1;
+        cout << flight << endl;
     }
 }
