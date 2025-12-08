@@ -25,6 +25,9 @@ int main() {
                 end_airport += c;
             }
         }
+        if (airports.find(start_airport) != airports.end()) {
+            for (auto )
+        }
         cout << end_airport << endl;
     }
 }
