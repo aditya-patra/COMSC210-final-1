@@ -1,5 +1,6 @@
 #include <iostream>
 #include <fstream>
+#include <map>
 
 using namespace std;
 
@@ -8,8 +9,19 @@ int main() {
     string start_airport;
     string end_airport;
     string flight;
+    map<string, int> airports;
     while(getline(file, flight)) {
         int start = 1;
-        cout << flight << endl;
+        for(char c: flight) {
+            if (c == ' ') {
+                start = 0;
+            }
+            if (start == 1) {
+                start_airport += c;
+            }
+            else {
+                end_airport += c;
+            }
+        }
     }
 }
