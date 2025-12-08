@@ -28,11 +28,15 @@ int main() {
         if (airports.find(start_airport) != airports.end()) {
             for (auto it = airports.begin(); it != airports.end(); it++) {
                 if (it->first == start_airport) {
+                    cout << "Yay";
                     it->second += 1;
                     break;
                 }
             }
         }
         cout << end_airport << endl;
+    }
+    for(const auto& pair : airports) {
+        cout << pair.first << "  " << pair.second << endl;
     }
 }
