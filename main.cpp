@@ -62,7 +62,7 @@ int main() {
             max_usage = pair.second;
         }
     }
-    cout << "Busiest airport(s) with count " << max_usage << ": " << endl;
+    cout << "\nBusiest airport(s) with count " << max_usage << ": " << endl;
     for(const auto& pair: airports) {
         if (pair.second == max_usage) {
             cout << " " << pair.first << "  " << pair.second << endl;
@@ -73,7 +73,7 @@ int main() {
     // not allowed to create function as per instructions, so code copy-pasted instead
     int low = 5;
     int high = 8;
-    cout << "Airports with traffic in range [" << low << ", " << high << "]: " << endl;
+    cout << "\nAirports with traffic in range [" << low << ", " << high << "]: " << endl;
     for (const auto& pair : airports) {
         if (pair.second >= low && pair.second <= high) {
             cout << " " << pair.first << "  " << pair.second << endl;
@@ -81,7 +81,7 @@ int main() {
     }
     low = 9;
     high = 12;
-    cout << "Airports with traffic in range [" << low << ", " << high << "]: " << endl;
+    cout << "\nAirports with traffic in range [" << low << ", " << high << "]: " << endl;
     for (const auto& pair : airports) {
         if (pair.second >= low && pair.second <= high) {
             cout << " " << pair.first << "  " << pair.second << endl;  
