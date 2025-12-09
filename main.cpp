@@ -50,7 +50,7 @@ int main() {
             airports.insert(make_pair(end_airport, 1));
         }
     }
-    cout << "List of airports and usage: " << endl;
+    cout << "All airport traffic counts: " << endl;
     for(const auto& pair : airports) {
         cout << " " << pair.first << "  " << pair.second << endl;
     }
@@ -62,7 +62,7 @@ int main() {
             max_usage = pair.second;
         }
     }
-    cout << "Busiest airports: " << endl;
+    cout << "Busiest airport(s) with count " << max_usage << ": " << endl;
     for(const auto& pair: airports) {
         if (pair.second == max_usage) {
             cout << " " << pair.first << "  " << pair.second << endl;
