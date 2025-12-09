@@ -73,8 +73,8 @@ int main() {
     int low = 3;
     int high = 20;
     for (const auto& pair : airports) {
-        if (pair.second > low && pair.second < high) {
-            cout << " " << pair.first << "  " << pair.second;
+        if (pair.second >= low && pair.second <= high) {
+            cout << " " << pair.first << "  " << pair.second << endl;
         }
     }
 }
