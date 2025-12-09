@@ -72,20 +72,14 @@ int main() {
     //Milestone 3
     int low = 3;
     int high = 20;
-    cout << "Enter Low: ";
-    cin >> low;
-    cout << "Enter High: ";
-    cin >> high;
     cout << "Airports in range: " << endl;
     for (const auto& pair : airports) {
         if (pair.second >= low && pair.second <= high) {
             cout << " " << pair.first << "  " << pair.second << endl;
         }
     }
-    cout << "Enter Low: ";
-    cin >> low;
-    cout << "Enter High: ";
-    cin >> high;
+    low = 11;
+    high = 15;
     cout << "Airports in range: " << endl;
     for (const auto& pair : airports) {
         if (pair.second >= low && pair.second <= high) {
