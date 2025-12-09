@@ -70,6 +70,7 @@ int main() {
     }
 
     //Milestone 3
+    // not allowed to create function as per instructions, so code copy-pasted instead
     int low = 5;
     int high = 8;
     cout << "Airports with traffic in range [" << low << ", " << high << "]: " << endl;
