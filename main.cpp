@@ -72,7 +72,7 @@ int main() {
     //Milestone 3
     int low = 5;
     int high = 8;
-    cout << "Airports in range: " << endl;
+    cout << "Airports with traffic in range [" << low << ", " << high << "]: " << endl;
     for (const auto& pair : airports) {
         if (pair.second >= low && pair.second <= high) {
             cout << " " << pair.first << "  " << pair.second << endl;
