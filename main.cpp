@@ -84,7 +84,7 @@ int main() {
     cout << "Airports with traffic in range [" << low << ", " << high << "]: " << endl;
     for (const auto& pair : airports) {
         if (pair.second >= low && pair.second <= high) {
-            cout << " " << pair.first << "  " << pair.second << endl; 
+            cout << " " << pair.first << "  " << pair.second << endl;  
         }
     }
 }
